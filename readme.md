@@ -5,7 +5,7 @@ This document provides the instructions to reproduce 2 experiments of MPFUZZ, na
 
 For more details of MPFUZZ please refer to the paper "Toward Automated Discovery of Asymmetric Mempool DoS in Blockchains" published in IEEE Transactions on Software Engineering, 2026: https://ieeexplore.ieee.org/document/11543216. The paper is also attached in this repository.
 
-
+The work was supported by the Ethereum Foundation’s 2025 Academic Grants. 
 
 
 
@@ -19,7 +19,7 @@ The artifact is designed to operate on Unix-like operating systems. (The author 
 
 As the foundational environment for our artifact’s execution, Python version 3.9 or later must be installed. Additionally, a few Python libraries are essential to its operation include web3, numpy, pandas, and graphviz.
 
-1. After downloading all the files in the figshare project https://doi.org/10.6084/m9.figshare.26068909.v5, unzip the key_new.zip, keep the unzipped folder with the same name as ./key_new/
+1. After downloading all the files in the current repository, unzip the key_new.zip, keep the unzipped folder with the same name as ./key_new/
 
 2. unzip the go-ethereum-1.10.11.zip, keep the unzipped folder with the same name as ./go-ethereum-1.10.11/
 
@@ -44,7 +44,7 @@ As the foundational environment for our artifact’s execution, Python version 3
 Experiment E1: Reproduce the fuzzing results against a 4 slots Ethereum mempool. 
 -------------------------------------------------------------------------------
 
-The experimental results validate the Major Claims C1 and C2 described in the USENIX Security ’24 Artifact Appendix: Understanding Ethereum Mempool Security under Asymmetric DoS by Symbolized Stateful Fuzzing. The experiment costs around 15 seconds compute-time.
+The experimental results show that MPFUZZ can discover new asymmetric DoS vulnerabilities and efficiently search the mempool state space using symbolized transaction sequences, state-coverage feedback, and intermediate-state promisingness. The experiment costs around 15 seconds compute-time.
 
 1. In terminal 1, run the script in the current directory. 
 
@@ -64,7 +64,7 @@ After the Python script terminates, a PDF file is generated that reports the exp
 Experiment E2: Reproduce the performance evaluation of detecting the first exploit.
 ------------------------------------------------------------------------------------
 
-The experimental results validate the Major Claims C3 described in the USENIX Security ’24 Artifact Appendix: Understanding Ethereum Mempool Security under Asymmetric DoS by Symbolized Stateful Fuzzing. The experiment costs less than a minute compute-time.
+The experimental results show that MPFUZZ can find the XT3 exploit against a 6-slot mempool in 0.03 minutes and against a 16-slot mempool in under a minute. The experiment costs less than a minute compute-time.
 
 Experiment E2a: Finding exploit against 6-slot mempool
 ------------------------------------------------------
