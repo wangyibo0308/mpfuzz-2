@@ -99,8 +99,9 @@ After the Python script terminates, the concrete exploit transaction sequence of
 
 
 
-MPFUZZ with epsilon configuration: Running MPFUZZ with various epsilon under 16 slots mempool. We set a 16-hour time-out for the experiment. Each of the experiment costs around 16 hours compute-time.
+MPFUZZ with epsilon configuration: Running MPFUZZ with various epsilon under 16 slots mempool. 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+We set a 16-hour time-out for the experiment. Each of the experiment costs around 16 hours compute-time.
 
 1. In terminal 1, run the script in the current directory after making the script executable. 
 
