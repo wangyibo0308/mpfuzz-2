@@ -1,4 +1,4 @@
-MPFUZZ2
+MPFUZZ-2
 ======
 
 This document provides the instructions to reproduce 2 experiments of MPFUZZ, namely experiment E1 and experiment E2 as described below. 
